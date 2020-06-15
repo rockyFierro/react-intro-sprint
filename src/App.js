@@ -1,10 +1,15 @@
-import React from "react";
-
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Home from './components/Home';
+import Nav from './components/Nav';
 const App = () => {
   return (
     <>
+      <Nav/>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <Route>
+        <Home/>
+      </Route>
     </>
   );
 };
